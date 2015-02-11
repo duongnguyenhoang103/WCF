@@ -1,0 +1,9 @@
+C:\Users\duong\Documents\Visual Studio 2012\Projects\DemoWebService1\BusinesEntity\bin\Debug\BusinesEntity.dll
+C:\Users\duong\Documents\Visual Studio 2012\Projects\DemoWebService1\BusinesEntity\bin\Debug\BusinesEntity.pdb
+C:\Users\duong\Documents\Visual Studio 2012\Projects\DemoWebService1\BusinesEntity\obj\Debug\BusinesEntity.dll
+C:\Users\duong\Documents\Visual Studio 2012\Projects\DemoWebService1\BusinesEntity\obj\Debug\BusinesEntity.pdb
+C:\Users\duong\Documents\Visual Studio 2012\Projects\DemoWebService1\BusinesEntity\obj\Debug\BusinesEntity.csprojResolveAssemblyReference.cache
+C:\Users\duong\Documents\Visual Studio 2012\Projects\DemoWebService1\BusinesEntity\bin\Debug\DataAccess.dll
+C:\Users\duong\Documents\Visual Studio 2012\Projects\DemoWebService1\BusinesEntity\bin\Debug\DataAccess.pdb
+C:\Users\duong\Documents\Visual Studio 2012\Projects\DemoWebService1\BusinesEntity\bin\Debug\BusinesObject.dll
+C:\Users\duong\Documents\Visual Studio 2012\Projects\DemoWebService1\BusinesEntity\bin\Debug\BusinesObject.pdb

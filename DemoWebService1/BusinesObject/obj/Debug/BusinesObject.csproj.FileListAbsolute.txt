@@ -1,0 +1,4 @@
+C:\Users\duong\Documents\Visual Studio 2012\Projects\DemoWebService1\BusinesObject\bin\Debug\BusinesObject.dll
+C:\Users\duong\Documents\Visual Studio 2012\Projects\DemoWebService1\BusinesObject\bin\Debug\BusinesObject.pdb
+C:\Users\duong\Documents\Visual Studio 2012\Projects\DemoWebService1\BusinesObject\obj\Debug\BusinesObject.dll
+C:\Users\duong\Documents\Visual Studio 2012\Projects\DemoWebService1\BusinesObject\obj\Debug\BusinesObject.pdb

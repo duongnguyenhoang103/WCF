@@ -1,0 +1,4 @@
+c:\users\duong\documents\visual studio 2012\Projects\DemoWebService1\DemoWebService1\bin\DemoWebService1.dll
+c:\users\duong\documents\visual studio 2012\Projects\DemoWebService1\DemoWebService1\bin\DemoWebService1.pdb
+c:\users\duong\documents\visual studio 2012\Projects\DemoWebService1\DemoWebService1\obj\Debug\DemoWebService1.dll
+c:\users\duong\documents\visual studio 2012\Projects\DemoWebService1\DemoWebService1\obj\Debug\DemoWebService1.pdb
