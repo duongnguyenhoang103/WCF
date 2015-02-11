@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceRDR1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:5275/ServiceRDR1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:5275/ServiceRDR1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:5275/ServiceRDR1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://localhost:5275/ServiceRDR1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/BusinesObject" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceRDR1_showRDR1_InputMessage">
+    <wsdl:part name="parameters" element="tns:showRDR1" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_showRDR1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:showRDR1Response" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_showRDR1ByDocEntry_InputMessage">
+    <wsdl:part name="parameters" element="tns:showRDR1ByDocEntry" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_showRDR1ByDocEntry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:showRDR1ByDocEntryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_addRDR1_InputMessage">
+    <wsdl:part name="parameters" element="tns:addRDR1" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_addRDR1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addRDR1Response" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_updateRDR1_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateRDR1" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_updateRDR1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateRDR1Response" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_CheckItemCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckItemCode" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_CheckItemCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckItemCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_CheckExistsDocEntryAndLineNum_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckExistsDocEntryAndLineNum" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_CheckExistsDocEntryAndLineNum_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckExistsDocEntryAndLineNumResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_deleteRDR1_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteRDR1" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_deleteRDR1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteRDR1Response" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_GetMaxLineNumByDocEntry_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaxLineNumByDocEntry" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_GetMaxLineNumByDocEntry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaxLineNumByDocEntryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_SearchRDR1ByDocEntry_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchRDR1ByDocEntry" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_SearchRDR1ByDocEntry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchRDR1ByDocEntryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_SearchRDR1ByDocEntryAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchRDR1ByDocEntryAll" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRDR1_SearchRDR1ByDocEntryAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchRDR1ByDocEntryAllResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceRDR1">
+    <wsdl:operation name="showRDR1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRDR1/showRDR1" message="tns:IServiceRDR1_showRDR1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRDR1/showRDR1Response" message="tns:IServiceRDR1_showRDR1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="showRDR1ByDocEntry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRDR1/showRDR1ByDocEntry" message="tns:IServiceRDR1_showRDR1ByDocEntry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRDR1/showRDR1ByDocEntryResponse" message="tns:IServiceRDR1_showRDR1ByDocEntry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addRDR1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRDR1/addRDR1" message="tns:IServiceRDR1_addRDR1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRDR1/addRDR1Response" message="tns:IServiceRDR1_addRDR1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateRDR1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRDR1/updateRDR1" message="tns:IServiceRDR1_updateRDR1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRDR1/updateRDR1Response" message="tns:IServiceRDR1_updateRDR1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckItemCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRDR1/CheckItemCode" message="tns:IServiceRDR1_CheckItemCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRDR1/CheckItemCodeResponse" message="tns:IServiceRDR1_CheckItemCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckExistsDocEntryAndLineNum">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRDR1/CheckExistsDocEntryAndLineNum" message="tns:IServiceRDR1_CheckExistsDocEntryAndLineNum_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRDR1/CheckExistsDocEntryAndLineNumResponse" message="tns:IServiceRDR1_CheckExistsDocEntryAndLineNum_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteRDR1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRDR1/deleteRDR1" message="tns:IServiceRDR1_deleteRDR1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRDR1/deleteRDR1Response" message="tns:IServiceRDR1_deleteRDR1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaxLineNumByDocEntry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRDR1/GetMaxLineNumByDocEntry" message="tns:IServiceRDR1_GetMaxLineNumByDocEntry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRDR1/GetMaxLineNumByDocEntryResponse" message="tns:IServiceRDR1_GetMaxLineNumByDocEntry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchRDR1ByDocEntry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRDR1/SearchRDR1ByDocEntry" message="tns:IServiceRDR1_SearchRDR1ByDocEntry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRDR1/SearchRDR1ByDocEntryResponse" message="tns:IServiceRDR1_SearchRDR1ByDocEntry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchRDR1ByDocEntryAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRDR1/SearchRDR1ByDocEntryAll" message="tns:IServiceRDR1_SearchRDR1ByDocEntryAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRDR1/SearchRDR1ByDocEntryAllResponse" message="tns:IServiceRDR1_SearchRDR1ByDocEntryAll_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceRDR1" type="tns:IServiceRDR1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="showRDR1">
+      <soap:operation soapAction="http://tempuri.org/IServiceRDR1/showRDR1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showRDR1ByDocEntry">
+      <soap:operation soapAction="http://tempuri.org/IServiceRDR1/showRDR1ByDocEntry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addRDR1">
+      <soap:operation soapAction="http://tempuri.org/IServiceRDR1/addRDR1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateRDR1">
+      <soap:operation soapAction="http://tempuri.org/IServiceRDR1/updateRDR1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckItemCode">
+      <soap:operation soapAction="http://tempuri.org/IServiceRDR1/CheckItemCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckExistsDocEntryAndLineNum">
+      <soap:operation soapAction="http://tempuri.org/IServiceRDR1/CheckExistsDocEntryAndLineNum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteRDR1">
+      <soap:operation soapAction="http://tempuri.org/IServiceRDR1/deleteRDR1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaxLineNumByDocEntry">
+      <soap:operation soapAction="http://tempuri.org/IServiceRDR1/GetMaxLineNumByDocEntry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchRDR1ByDocEntry">
+      <soap:operation soapAction="http://tempuri.org/IServiceRDR1/SearchRDR1ByDocEntry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchRDR1ByDocEntryAll">
+      <soap:operation soapAction="http://tempuri.org/IServiceRDR1/SearchRDR1ByDocEntryAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceRDR1">
+    <wsdl:port name="BasicHttpBinding_IServiceRDR1" binding="tns:BasicHttpBinding_IServiceRDR1">
+      <soap:address location="http://localhost:5275/ServiceRDR1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

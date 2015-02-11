@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8e7ad994-db78-40ed-a7b2-7d1f4d85a769" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5275/ServiceORDR.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceORDR.xsd" MetadataType="Schema" ID="621de4c6-cd98-43fd-94a9-296c8e187a17" SourceId="1" SourceUrl="http://localhost:5275/ServiceORDR.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceORDR.disco" MetadataType="Disco" ID="c423f617-1a96-4a26-86e1-eb520838e6d1" SourceId="1" SourceUrl="http://localhost:5275/ServiceORDR.svc?disco" />
+    <MetadataFile FileName="ServiceORDR.wsdl" MetadataType="Wsdl" ID="7296cc90-d4dc-4de0-b803-f44318781612" SourceId="1" SourceUrl="http://localhost:5275/ServiceORDR.svc?wsdl" />
+    <MetadataFile FileName="ServiceORDR1.xsd" MetadataType="Schema" ID="7f600a17-e435-4e17-a51f-018244ba1039" SourceId="1" SourceUrl="http://localhost:5275/ServiceORDR.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServiceORDR2.xsd" MetadataType="Schema" ID="cbd018ee-1d04-4b83-89f4-1c1725ea35c8" SourceId="1" SourceUrl="http://localhost:5275/ServiceORDR.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceORDR3.xsd" MetadataType="Schema" ID="73e8e4bb-5fab-4e2f-ae3d-32bb65661bfb" SourceId="1" SourceUrl="http://localhost:5275/ServiceORDR.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

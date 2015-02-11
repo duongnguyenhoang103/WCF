@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="27d77717-9c22-4bbd-965b-0ab568a8fafa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5275/ServiceOITM.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceOITM.xsd" MetadataType="Schema" ID="af926dab-e655-4b80-bdc7-8c298ff86ab4" SourceId="1" SourceUrl="http://localhost:5275/ServiceOITM.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceOITM.disco" MetadataType="Disco" ID="44e8af9f-6b79-4111-97a6-d3f9d5ec1ac8" SourceId="1" SourceUrl="http://localhost:5275/ServiceOITM.svc?disco" />
+    <MetadataFile FileName="ServiceOITM1.xsd" MetadataType="Schema" ID="299e4e29-b06e-4169-8eca-3b58b67e2283" SourceId="1" SourceUrl="http://localhost:5275/ServiceOITM.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceOITM2.xsd" MetadataType="Schema" ID="32f68822-c27c-40c0-8be1-327c5beed96e" SourceId="1" SourceUrl="http://localhost:5275/ServiceOITM.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceOITM.wsdl" MetadataType="Wsdl" ID="e7a061b2-f0c5-4a01-b4b0-7ee7c1895fa3" SourceId="1" SourceUrl="http://localhost:5275/ServiceOITM.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ba41fe8c-a82e-4472-9d14-28bfbfa06599" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5275/ServiceOVTG.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceOVTG.xsd" MetadataType="Schema" ID="74b3c623-6336-4561-847b-3d396463bc3e" SourceId="1" SourceUrl="http://localhost:5275/ServiceOVTG.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceOVTG.wsdl" MetadataType="Wsdl" ID="f0c5e185-8b6d-4339-97f8-571ffe7c8a62" SourceId="1" SourceUrl="http://localhost:5275/ServiceOVTG.svc?wsdl" />
+    <MetadataFile FileName="ServiceOVTG1.xsd" MetadataType="Schema" ID="a65a43da-f10c-4952-8cf4-c756d970c23c" SourceId="1" SourceUrl="http://localhost:5275/ServiceOVTG.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceOVTG.disco" MetadataType="Disco" ID="c307d6ce-1e8e-4350-a9c6-52ed37029ae5" SourceId="1" SourceUrl="http://localhost:5275/ServiceOVTG.svc?disco" />
+    <MetadataFile FileName="ServiceOVTG2.xsd" MetadataType="Schema" ID="24d2eb37-5c08-4e90-a66c-cbab022fafcf" SourceId="1" SourceUrl="http://localhost:5275/ServiceOVTG.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

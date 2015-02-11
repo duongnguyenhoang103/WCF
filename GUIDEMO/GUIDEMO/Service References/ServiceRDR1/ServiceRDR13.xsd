@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BusinesObject" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BusinesObject" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="BO_RDR1">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseDocNum" type="xs:int" />
+      <xs:element minOccurs="0" name="BaseEntry" type="xs:int" />
+      <xs:element minOccurs="0" name="BaseLine" type="xs:int" />
+      <xs:element minOccurs="0" name="BaseOpnQty" type="xs:double" />
+      <xs:element minOccurs="0" name="BaseQty" type="xs:double" />
+      <xs:element minOccurs="0" name="BaseRef" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BaseType" type="xs:int" />
+      <xs:element minOccurs="0" name="CodeBars" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DiscPrcnt" type="xs:double" />
+      <xs:element minOccurs="0" name="DocDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DocEntry" type="xs:int" />
+      <xs:element minOccurs="0" name="Dscription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Factor1" type="xs:double" />
+      <xs:element minOccurs="0" name="Factor2" type="xs:double" />
+      <xs:element minOccurs="0" name="Factor3" type="xs:double" />
+      <xs:element minOccurs="0" name="Factor4" type="xs:double" />
+      <xs:element minOccurs="0" name="FinncPriod" type="xs:int" />
+      <xs:element minOccurs="0" name="FreeTxt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GTotal" type="xs:double" />
+      <xs:element minOccurs="0" name="GTotalFC" type="xs:double" />
+      <xs:element minOccurs="0" name="GrssProfFC" type="xs:double" />
+      <xs:element minOccurs="0" name="GrssProfit" type="xs:double" />
+      <xs:element minOccurs="0" name="ItemCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LineNum" type="xs:int" />
+      <xs:element minOccurs="0" name="LineStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LineTotal" type="xs:double" />
+      <xs:element minOccurs="0" name="NumPerMsr" type="xs:double" />
+      <xs:element minOccurs="0" name="ObjType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OcrCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OcrCode2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OcrCode3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OcrCode4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OcrCode5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OpenQty" type="xs:double" />
+      <xs:element minOccurs="0" name="OpenSum" type="xs:double" />
+      <xs:element minOccurs="0" name="OpenSumFC" type="xs:double" />
+      <xs:element minOccurs="0" name="Price" type="xs:double" />
+      <xs:element minOccurs="0" name="PriceAfVAT" type="xs:double" />
+      <xs:element minOccurs="0" name="PriceBefDi" type="xs:double" />
+      <xs:element minOccurs="0" name="Project" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:double" />
+      <xs:element minOccurs="0" name="Rate" type="xs:double" />
+      <xs:element minOccurs="0" name="ShipDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SlpCode" type="xs:int" />
+      <xs:element minOccurs="0" name="TargetType" type="xs:int" />
+      <xs:element minOccurs="0" name="TaxCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalFrgn" type="xs:double" />
+      <xs:element minOccurs="0" name="TrgetEntry" type="xs:int" />
+      <xs:element minOccurs="0" name="UseBaseUn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VatDscntPr" type="xs:double" />
+      <xs:element minOccurs="0" name="VatGroup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VatPrcnt" type="xs:double" />
+      <xs:element minOccurs="0" name="VatSum" type="xs:double" />
+      <xs:element minOccurs="0" name="VatSumFrgn" type="xs:double" />
+      <xs:element minOccurs="0" name="VatSumSy" type="xs:double" />
+      <xs:element minOccurs="0" name="WhsCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="unitMsr" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BO_RDR1" nillable="true" type="tns:BO_RDR1" />
+</xs:schema>

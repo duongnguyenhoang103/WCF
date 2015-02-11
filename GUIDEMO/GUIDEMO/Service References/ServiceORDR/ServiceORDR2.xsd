@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BusinesObject" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BusinesObject" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="BO_ORDR">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CANCELED" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CardCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CardName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cashremainder" type="xs:double" />
+      <xs:element minOccurs="0" name="CntctCode" type="xs:int" />
+      <xs:element minOccurs="0" name="Comments" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Confirmed" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CurSource" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DiscPrcnt" type="xs:double" />
+      <xs:element minOccurs="0" name="DiscSum" type="xs:double" />
+      <xs:element minOccurs="0" name="DiscSumFC" type="xs:double" />
+      <xs:element minOccurs="0" name="DiscSumSy" type="xs:double" />
+      <xs:element minOccurs="0" name="DocCur" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DocDueDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DocEntry" type="xs:int" />
+      <xs:element minOccurs="0" name="DocNum" type="xs:int" />
+      <xs:element minOccurs="0" name="DocRate" type="xs:double" />
+      <xs:element minOccurs="0" name="DocStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DocTotal" type="xs:double" />
+      <xs:element minOccurs="0" name="DocTotalFC" type="xs:double" />
+      <xs:element minOccurs="0" name="DocTotalSy" type="xs:double" />
+      <xs:element minOccurs="0" name="DocType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FinncPriod" type="xs:int" />
+      <xs:element minOccurs="0" name="GrosProfFC" type="xs:double" />
+      <xs:element minOccurs="0" name="GrosProfit" type="xs:double" />
+      <xs:element minOccurs="0" name="GroupNum" type="xs:int" />
+      <xs:element minOccurs="0" name="Handwrtten" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsICT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsRIV" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JrnlMemo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumAtCard" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ObjType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaidFC" type="xs:double" />
+      <xs:element minOccurs="0" name="PaidSum" type="xs:double" />
+      <xs:element minOccurs="0" name="PaidSumFc" type="xs:double" />
+      <xs:element minOccurs="0" name="PaidSumSc" type="xs:double" />
+      <xs:element minOccurs="0" name="PaidSys" type="xs:double" />
+      <xs:element minOccurs="0" name="PaidToDate" type="xs:double" />
+      <xs:element minOccurs="0" name="PayToCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PoPrss" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Printed" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReceiptNum" type="xs:int" />
+      <xs:element minOccurs="0" name="Ref1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ref2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Series" type="xs:int" />
+      <xs:element minOccurs="0" name="ShipToCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SlpCode" type="xs:int" />
+      <xs:element minOccurs="0" name="TaxDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TotalBefore" type="xs:double" />
+      <xs:element minOccurs="0" name="TransId" type="xs:int" />
+      <xs:element minOccurs="0" name="TrnspCode" type="xs:int" />
+      <xs:element minOccurs="0" name="TypeDisc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UserSign" type="xs:int" />
+      <xs:element minOccurs="0" name="UserSign2" type="xs:int" />
+      <xs:element minOccurs="0" name="VatDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="VatSum" type="xs:double" />
+      <xs:element minOccurs="0" name="VatSumFC" type="xs:double" />
+      <xs:element minOccurs="0" name="VatSumSy" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BO_ORDR" nillable="true" type="tns:BO_ORDR" />
+</xs:schema>

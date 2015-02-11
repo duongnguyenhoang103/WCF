@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="00e289f1-ab39-420c-90d9-96168cc9871c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5275/ServiceOWHS.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceOWHS.xsd" MetadataType="Schema" ID="c4329581-1c05-499f-849a-81151e1fdbe4" SourceId="1" SourceUrl="http://localhost:5275/ServiceOWHS.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceOWHS1.xsd" MetadataType="Schema" ID="4d34fb24-5de8-4f08-98da-79c23a28705b" SourceId="1" SourceUrl="http://localhost:5275/ServiceOWHS.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceOWSH.wsdl" MetadataType="Wsdl" ID="f2f7e630-2ca3-4f82-ad4b-3f5106ed336d" SourceId="1" SourceUrl="http://localhost:5275/ServiceOWHS.svc?wsdl" />
+    <MetadataFile FileName="ServiceOWHS2.xsd" MetadataType="Schema" ID="bc00a290-84d1-4396-b901-c20fd307b072" SourceId="1" SourceUrl="http://localhost:5275/ServiceOWHS.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceOWHS.disco" MetadataType="Disco" ID="a3f7a425-f46e-4e50-93bf-4ce1d57afc22" SourceId="1" SourceUrl="http://localhost:5275/ServiceOWHS.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

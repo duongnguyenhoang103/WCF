@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e36c5c1f-4027-4d75-b09c-a5dac007498d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5275/ServiceLogistic.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceLogistic.xsd" MetadataType="Schema" ID="e5beff5b-f02b-4823-8ea4-4ed18b9e3d7b" SourceId="1" SourceUrl="http://localhost:5275/ServiceLogistic.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServiceLogistic1.xsd" MetadataType="Schema" ID="5843cb42-19ed-4558-8eea-92fdd3c434a6" SourceId="1" SourceUrl="http://localhost:5275/ServiceLogistic.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceLogistic2.xsd" MetadataType="Schema" ID="a7fd963f-d5c2-494a-96da-148a31d81a4a" SourceId="1" SourceUrl="http://localhost:5275/ServiceLogistic.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceLogistic.wsdl" MetadataType="Wsdl" ID="f09f2996-21b7-4286-b20c-dd49bc547a32" SourceId="1" SourceUrl="http://localhost:5275/ServiceLogistic.svc?wsdl" />
+    <MetadataFile FileName="ServiceLogistic3.xsd" MetadataType="Schema" ID="b56314a4-7ac7-4641-9738-6caa2223211b" SourceId="1" SourceUrl="http://localhost:5275/ServiceLogistic.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceLogistic.disco" MetadataType="Disco" ID="8ee9fdf1-8f10-435b-bb28-2ff8fcfdca4a" SourceId="1" SourceUrl="http://localhost:5275/ServiceLogistic.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

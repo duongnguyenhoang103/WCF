@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{143D0736-F566-4C51-AD46-88B0781D8469}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUIDEMO</RootNamespace>
+    <AssemblyName>GUIDEMO</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BusinesEntity">
+      <HintPath>..\..\..\..\Documents\Visual Studio 2012\Projects\DemoWebService1\BusinesEntity\bin\Debug\BusinesEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="BusinesObject">
+      <HintPath>..\..\..\..\Documents\Visual Studio 2012\Projects\DemoWebService1\BusinesObject\bin\Debug\BusinesObject.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Win.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormORDR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormORDR.Designer.cs">
+      <DependentUpon>FormORDR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOCRD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOCRD.Designer.cs">
+      <DependentUpon>FormOCRD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOTM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOTM.Designer.cs">
+      <DependentUpon>FormOTM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ServiceLogistic\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceOCPR\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceOITM\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceORDR\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceOVTG\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceOWHS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceRDR1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceOCRD\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormORDR.resx">
+      <DependentUpon>FormORDR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOCRD.resx">
+      <DependentUpon>FormOCRD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOTM.resx">
+      <DependentUpon>FormOTM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\ServiceLogistic\ServiceLogistic.wsdl" />
+    <None Include="Service References\ServiceLogistic\ServiceLogistic.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceLogistic\ServiceLogistic1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceLogistic\ServiceLogistic2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceLogistic\ServiceLogistic3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceOCPR\ServiceOCPR.wsdl" />
+    <None Include="Service References\ServiceOCPR\ServiceOCPR.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceOCPR\ServiceOCPR1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceOCPR\ServiceOCPR2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceOITM\ServiceOITM.wsdl" />
+    <None Include="Service References\ServiceOITM\ServiceOITM.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceOITM\ServiceOITM1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceOITM\ServiceOITM2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceORDR\ServiceORDR.wsdl" />
+    <None Include="Service References\ServiceORDR\ServiceORDR.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceORDR\ServiceORDR1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceORDR\ServiceORDR2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceORDR\ServiceORDR3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceOVTG\ServiceOVTG.wsdl" />
+    <None Include="Service References\ServiceOVTG\ServiceOVTG.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceOVTG\ServiceOVTG1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceOVTG\ServiceOVTG2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceOWHS\ServiceOWHS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceOWHS\ServiceOWHS1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceOWHS\ServiceOWHS2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceOWHS\ServiceOWSH.wsdl" />
+    <None Include="Service References\ServiceRDR1\ServiceRDR1.wsdl" />
+    <None Include="Service References\ServiceRDR1\ServiceRDR1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceRDR1\ServiceRDR11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceRDR1\ServiceRDR12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceRDR1\ServiceRDR13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceOCRD\ServiceOCRD.wsdl" />
+    <None Include="Service References\ServiceOCRD\ServiceOCRD.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceOCRD\ServiceOCRD1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceOCRD\ServiceOCRD2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceLogistic\" />
+    <WCFMetadataStorage Include="Service References\ServiceOCPR\" />
+    <WCFMetadataStorage Include="Service References\ServiceOITM\" />
+    <WCFMetadataStorage Include="Service References\ServiceORDR\" />
+    <WCFMetadataStorage Include="Service References\ServiceOVTG\" />
+    <WCFMetadataStorage Include="Service References\ServiceOWHS\" />
+    <WCFMetadataStorage Include="Service References\ServiceRDR1\" />
+    <WCFMetadataStorage Include="Service References\ServiceOCRD\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceLogistic\ServiceLogistic.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceLogistic\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceLogistic\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceLogistic\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceORDR\ServiceORDR.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceORDR\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceORDR\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceORDR\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceRDR1\ServiceRDR1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceRDR1\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceRDR1\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceRDR1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOCRD\ServiceOCRD.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOCRD\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOCRD\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOCRD\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOITM\ServiceOITM.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOITM\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOITM\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOITM\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOWHS\ServiceOWHS.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOWHS\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOWHS\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOWHS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOVTG\ServiceOVTG.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOVTG\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOVTG\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOVTG\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOCPR\ServiceOCPR.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOCPR\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOCPR\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceOCPR\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

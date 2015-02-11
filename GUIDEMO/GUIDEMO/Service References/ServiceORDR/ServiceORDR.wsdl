@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceORDR" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:5275/ServiceORDR.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:5275/ServiceORDR.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:5275/ServiceORDR.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BusinesObject" />
+      <xsd:import schemaLocation="http://localhost:5275/ServiceORDR.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceORDR_addORDR_InputMessage">
+    <wsdl:part name="parameters" element="tns:addORDR" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_addORDR_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addORDRResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_updateORDR_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateORDR" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_updateORDR_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateORDRResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_deleteORDR_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteORDR" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_deleteORDR_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteORDRResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_ShowORDR_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShowORDR" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_ShowORDR_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShowORDRResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_searchByDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:searchByDate" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_searchByDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:searchByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_searchByNoOfTrans_InputMessage">
+    <wsdl:part name="parameters" element="tns:searchByNoOfTrans" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_searchByNoOfTrans_OutputMessage">
+    <wsdl:part name="parameters" element="tns:searchByNoOfTransResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_searchDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:searchDocument" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_searchDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:searchDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_searchByDateAndStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:searchByDateAndStatus" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_searchByDateAndStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:searchByDateAndStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_searchByNoOfTranAndBTrans_InputMessage">
+    <wsdl:part name="parameters" element="tns:searchByNoOfTranAndBTrans" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_searchByNoOfTranAndBTrans_OutputMessage">
+    <wsdl:part name="parameters" element="tns:searchByNoOfTranAndBTransResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_searchByBTrans_InputMessage">
+    <wsdl:part name="parameters" element="tns:searchByBTrans" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_searchByBTrans_OutputMessage">
+    <wsdl:part name="parameters" element="tns:searchByBTransResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_CheckDoc_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDoc" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_CheckDoc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDocResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_CheckExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckExists" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_CheckExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_SearchDocumentAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDocumentAll" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_SearchDocumentAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDocumentAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_NextID_InputMessage">
+    <wsdl:part name="parameters" element="tns:NextID" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_NextID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NextIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_searchByCardCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:searchByCardCode" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_searchByCardCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:searchByCardCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_GetMaxidDocNum_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaxidDocNum" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_GetMaxidDocNum_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaxidDocNumResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_SumLineTotalBeforDis_InputMessage">
+    <wsdl:part name="parameters" element="tns:SumLineTotalBeforDis" />
+  </wsdl:message>
+  <wsdl:message name="IServiceORDR_SumLineTotalBeforDis_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SumLineTotalBeforDisResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceORDR">
+    <wsdl:operation name="addORDR">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceORDR/addORDR" message="tns:IServiceORDR_addORDR_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceORDR/addORDRResponse" message="tns:IServiceORDR_addORDR_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateORDR">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceORDR/updateORDR" message="tns:IServiceORDR_updateORDR_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceORDR/updateORDRResponse" message="tns:IServiceORDR_updateORDR_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteORDR">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceORDR/deleteORDR" message="tns:IServiceORDR_deleteORDR_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceORDR/deleteORDRResponse" message="tns:IServiceORDR_deleteORDR_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowORDR">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceORDR/ShowORDR" message="tns:IServiceORDR_ShowORDR_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceORDR/ShowORDRResponse" message="tns:IServiceORDR_ShowORDR_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="searchByDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceORDR/searchByDate" message="tns:IServiceORDR_searchByDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceORDR/searchByDateResponse" message="tns:IServiceORDR_searchByDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="searchByNoOfTrans">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceORDR/searchByNoOfTrans" message="tns:IServiceORDR_searchByNoOfTrans_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceORDR/searchByNoOfTransResponse" message="tns:IServiceORDR_searchByNoOfTrans_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="searchDocument">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceORDR/searchDocument" message="tns:IServiceORDR_searchDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceORDR/searchDocumentResponse" message="tns:IServiceORDR_searchDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="searchByDateAndStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceORDR/searchByDateAndStatus" message="tns:IServiceORDR_searchByDateAndStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceORDR/searchByDateAndStatusResponse" message="tns:IServiceORDR_searchByDateAndStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="searchByNoOfTranAndBTrans">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceORDR/searchByNoOfTranAndBTrans" message="tns:IServiceORDR_searchByNoOfTranAndBTrans_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceORDR/searchByNoOfTranAndBTransResponse" message="tns:IServiceORDR_searchByNoOfTranAndBTrans_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="searchByBTrans">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceORDR/searchByBTrans" message="tns:IServiceORDR_searchByBTrans_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceORDR/searchByBTransResponse" message="tns:IServiceORDR_searchByBTrans_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDoc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceORDR/CheckDoc" message="tns:IServiceORDR_CheckDoc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceORDR/CheckDocResponse" message="tns:IServiceORDR_CheckDoc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceORDR/CheckExists" message="tns:IServiceORDR_CheckExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceORDR/CheckExistsResponse" message="tns:IServiceORDR_CheckExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchDocumentAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceORDR/SearchDocumentAll" message="tns:IServiceORDR_SearchDocumentAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceORDR/SearchDocumentAllResponse" message="tns:IServiceORDR_SearchDocumentAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NextID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceORDR/NextID" message="tns:IServiceORDR_NextID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceORDR/NextIDResponse" message="tns:IServiceORDR_NextID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="searchByCardCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceORDR/searchByCardCode" message="tns:IServiceORDR_searchByCardCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceORDR/searchByCardCodeResponse" message="tns:IServiceORDR_searchByCardCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaxidDocNum">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceORDR/GetMaxidDocNum" message="tns:IServiceORDR_GetMaxidDocNum_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceORDR/GetMaxidDocNumResponse" message="tns:IServiceORDR_GetMaxidDocNum_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SumLineTotalBeforDis">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceORDR/SumLineTotalBeforDis" message="tns:IServiceORDR_SumLineTotalBeforDis_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceORDR/SumLineTotalBeforDisResponse" message="tns:IServiceORDR_SumLineTotalBeforDis_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceORDR" type="tns:IServiceORDR">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="addORDR">
+      <soap:operation soapAction="http://tempuri.org/IServiceORDR/addORDR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateORDR">
+      <soap:operation soapAction="http://tempuri.org/IServiceORDR/updateORDR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteORDR">
+      <soap:operation soapAction="http://tempuri.org/IServiceORDR/deleteORDR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowORDR">
+      <soap:operation soapAction="http://tempuri.org/IServiceORDR/ShowORDR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchByDate">
+      <soap:operation soapAction="http://tempuri.org/IServiceORDR/searchByDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchByNoOfTrans">
+      <soap:operation soapAction="http://tempuri.org/IServiceORDR/searchByNoOfTrans" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchDocument">
+      <soap:operation soapAction="http://tempuri.org/IServiceORDR/searchDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchByDateAndStatus">
+      <soap:operation soapAction="http://tempuri.org/IServiceORDR/searchByDateAndStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchByNoOfTranAndBTrans">
+      <soap:operation soapAction="http://tempuri.org/IServiceORDR/searchByNoOfTranAndBTrans" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchByBTrans">
+      <soap:operation soapAction="http://tempuri.org/IServiceORDR/searchByBTrans" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDoc">
+      <soap:operation soapAction="http://tempuri.org/IServiceORDR/CheckDoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckExists">
+      <soap:operation soapAction="http://tempuri.org/IServiceORDR/CheckExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDocumentAll">
+      <soap:operation soapAction="http://tempuri.org/IServiceORDR/SearchDocumentAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NextID">
+      <soap:operation soapAction="http://tempuri.org/IServiceORDR/NextID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchByCardCode">
+      <soap:operation soapAction="http://tempuri.org/IServiceORDR/searchByCardCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaxidDocNum">
+      <soap:operation soapAction="http://tempuri.org/IServiceORDR/GetMaxidDocNum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SumLineTotalBeforDis">
+      <soap:operation soapAction="http://tempuri.org/IServiceORDR/SumLineTotalBeforDis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceORDR">
+    <wsdl:port name="BasicHttpBinding_IServiceORDR" binding="tns:BasicHttpBinding_IServiceORDR">
+      <soap:address location="http://localhost:5275/ServiceORDR.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
